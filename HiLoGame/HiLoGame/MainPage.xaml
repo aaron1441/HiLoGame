@@ -5,9 +5,9 @@
 
     <StackLayout VerticalOptions="End">
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,0,0,200">
-            <Button x:Name="BtnLower" Text="Lower" Margin="20"/>
+            <Button x:Name="BtnLower" Text="Lower" Margin="20" Clicked="BtnLower_Clicked"/>
             <Label x:Name="LblCurrentNumber" FontSize="Large" Text="--" Margin="20"/>    
-            <Button x:Name="BtnHigher" Text="Higher" Margin="20"/>
+            <Button x:Name="BtnHigher" Text="Higher" Margin="20" Clicked="BtnHigher_Clicked"/>
         </StackLayout>
 
 
@@ -17,9 +17,11 @@
                 <Label x:Name="LblGamesPlayed" Text="Games Played: --" FontSize="Large" Margin="5"/>
                 <Label x:Name="LblGamesWon" Text="Games Won: --" FontSize="Large" Margin="5"/>
             </StackLayout>
-            <ImageButton x:Name="IBNewCard" Source="CardImage.png"  VerticalOptions="Center" Clicked="ImageButton_Clicked"/>
+            <ImageButton x:Name="IBNewCard" Source="CardImage.png"  VerticalOptions="Center" Clicked="ImageButton_Clicked" IsEnabled="False"/>
 
         </StackLayout>
+
+        <Button x:Name="BtnStartNewGame" HorizontalOptions="Center" Clicked="BtnStartNewGame_Clicked" Text="Start New Game" FontSize="Large"/>
     </StackLayout>
 
 
